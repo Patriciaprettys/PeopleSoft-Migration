@@ -1,0 +1,22 @@
+# Post‑Migration Report & Lessons Learned
+**Go‑Live:** Targeted per README timeline  
+
+
+## Outcomes (replace placeholders with real numbers)
+- Headcount migrated: 100% (N of N)
+- Payroll variance in parallels: ≤0.5%
+- Onboarding cycle time reduced: X% (from A days to B days)
+- Data accuracy improved to: Y%
+
+## KPI Snapshot
+- UAT defect leakage (Critical/High): 0
+- Hypercare tickets (first 2 weeks): N (trend down by week 2)
+
+## Lessons Learned
+- Start data cleansing earlier (names, dates, codes).
+- Secure role matrix sign-off before UAT.
+- Add automated validation scripts to CI.
+
+## Next Steps
+- Decommission Workday access for dept scope.
+- Quarterly audit of HR data quality in PeopleSoft.
