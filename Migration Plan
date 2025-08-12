@@ -1,0 +1,47 @@
+# Migration Plan: Workday → PeopleSoft
+
+
+## Scope & Objectives
+- Migrate departmental HR data and processes from Workday to PeopleSoft.
+- Maintain compliance and data integrity; avoid business disruption.
+- Success = zero critical data loss; payroll and benefits validated in parallel runs.
+
+## Stakeholders
+- **Project Lead:** Patricia Nelson
+- **HR SME(s):** Dept HR partners
+- **IT SMEs:** PeopleSoft admin, Integration engineer
+- **Payroll/Benefits:** Payroll lead, Benefits admin
+- **Vendors:** Workday support (read access), PeopleSoft support
+
+## Approach
+- **Phased big-bang:** Single cutover weekend with 2-week hypercare.
+- **Environments:** DEV → TEST → UAT → PROD.
+- **Data strategy:** Extract from Workday (reports/API), transform, and load to PeopleSoft via CI/CI or Component Interfaces.
+
+## Milestones
+1. Planning & Requirements (4 wks)
+2. Data Mapping & Cleansing (3 wks)
+3. Configuration & Integrations (6 wks)
+4. Testing & Parallel Runs (4 wks)
+5. Training & Change Mgmt (2 wks)
+6. Go‑Live & Hypercare (2 wks)
+
+## Deliverables
+- Data mapping workbook, conversion scripts, test plan/results, training assets, cutover runbook, rollback plan.
+
+## Cutover (Runbook excerpt)
+- Freeze changes in Workday (dept scope).
+- Final extract and delta reconciliation.
+- Load to PeopleSoft in sequence: Job/Position → Job Data → Comp → Benefits → Time/Absence balances.
+- Validate dashboards and downstream feeds (reports, payroll).
+- Sign-offs: HR, Payroll, Project Lead.
+
+## Rollback
+- If critical defects found, revert to pre-cutover snapshot; lift freeze; schedule new window.
+
+## Assumptions & Constraints
+- Only department-scope data moves; no historical payroll recalculation.
+- SSO/role mapping prepared ahead.
+
+## Acceptance Criteria
+- 100% headcount migrated; pay group assignments correct; first payroll parallel within ±0.5% variance; zero P1 defects in hypercare.
