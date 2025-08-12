@@ -1,0 +1,12 @@
+# Risk Assessment: HR System Migration
+
+
+## Top Risks & Mitigations
+| Risk | Impact | Likelihood | Mitigation |
+|---|---|---|---|
+| Data mapping gaps | High | Medium | Conduct field-by-field reviews; use reconciliation reports. |
+| Parallel payroll mismatch | High | Medium | Two payroll parallels; variance threshold ≤0.5%; corrective playbook. |
+| Access/role issues at go‑live | Medium | Medium | Pre-provision roles; UAT sign-off on role matrix. |
+| Integration breaks | High | Low | Contract tests for inbound/outbound; smoke tests post-cutover. |
+| User adoption | Medium | Medium | Targeted training; floor support; job aids. |
+| Timeline slippage | Medium | Medium | Critical path tracking; weekly steering updates; scope gatekeeping. |
