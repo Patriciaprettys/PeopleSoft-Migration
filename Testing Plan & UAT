@@ -1,0 +1,23 @@
+# Testing Plan & UAT: Workday → PeopleSoft
+
+
+## Test Levels
+1. **Unit/Config Tests** – Validate PeopleSoft configuration (Job Codes, Positions, Pay Groups).
+2. **System/Integration Tests** – Validate interfaces (SSO, payroll feed, reporting refresh).
+3. **Data Conversion Tests** – Sample loads, full mock conversion, and final mock with reconciliations.
+4. **User Acceptance Testing (UAT)** – HR/Payroll SMEs validate end-to-end processes.
+
+## Test Scenarios (examples)
+- Create/Update Employee; Transfer; Termination; Rehire; Leave; Benefits enrollment change; Payroll calc preview; Time capture and approval; Security role checks.
+
+## Parallel Payroll
+- **Runs:** 2 parallels before go‑live.
+- **Variance threshold:** ±0.5% per employee and total run.
+- **Reconciliation reports:** Headcount, Job, Comp, Deduction, Benefit premiums.
+
+## Entry/Exit Criteria
+- **Entry to UAT:** Config baselined; conversion mock passed.
+- **Exit UAT:** No open High/Critical defects; signed business approval.
+
+## Defect Management
+- Severity (Critical/High/Medium/Low); SLA targets; daily triage; fix/verify loop in UAT window.
