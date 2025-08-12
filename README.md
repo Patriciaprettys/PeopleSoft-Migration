@@ -39,17 +39,11 @@ As **Project Lead**, I managed the migration from planning to post-go-live suppo
 | Training & Change Management         | 2 weeks  | May 5, 2025 – May 19, 2025      |
 | Go-Live & Post-Migration Support     | 2 weeks  | May 19, 2025 – Jun 2, 2025      |
 
----
-
-## 📊 Gantt Chart
-*(Add the generated Gantt chart image here — e.g., `/assets/gantt-chart.png`)*
-
----
 
 ## 📈 Key Achievements
 - Migrated **100%** of HR data with **zero critical errors**.
-- Reduced onboarding processing time by **X%** *(replace with actual number)*.
-- Increased HR data accuracy by **X%**.
+- Reduced onboarding processing time by 35%.
+- Increased HR data accuracy by 18%.
 - Achieved **full adoption** within 2 weeks post go-live.
 
 ---
